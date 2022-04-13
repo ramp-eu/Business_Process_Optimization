@@ -1,0 +1,15 @@
+<launch>
+
+  	<!-- Starting FIROS -->
+    	<node name="firos" pkg="firos" type="core.py"> </node>
+
+  	<!-- Getting nodes and edges from OCB -->
+	<node pkg="opil_bpo" name="SPgraph2NodesEdges" type="SGraphPNodesEdges.py" output="screen"> </node>
+
+  	<!-- Starting BPO service -->
+	<node pkg="opil_bpo" name="pathdist" type="service_path_finder2" output="screen"> </node>
+	<node pkg="opil_bpo" name="annotationfilter" type="annotfilt" output="screen"> </node>
+	<node pkg="opil_bpo" name="taskplanner_server" type="tp_runservice_v5.py" output="screen"> </node>
+
+</launch>
+

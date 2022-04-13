@@ -41,4 +41,3 @@ Then, run the BPO docker image using the `docker-compose_bpo.yaml` file.
 ```
 docker-compose -f docker-compose_bpo.yaml up -d
 ```
-

@@ -1,0 +1,7 @@
+string start_uuid
+string goal_uuid
+---
+
+string[] path_uuids
+float64 path_totalcost
+float64 total_path_points

@@ -1,0 +1,11 @@
+services: 
+  bpo: 
+    restart: always
+    container_name: mod.sw.bpo
+    environment: 
+      - "FIWAREHOST=127.0.0.1"
+      - "HOST=127.0.0.1"
+      - "NETINTERFACE=eth0"
+    image: mod.sw.bpo
+    network_mode: host
+version: "3"

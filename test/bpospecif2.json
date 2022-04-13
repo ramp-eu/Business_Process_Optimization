@@ -1,0 +1,20 @@
+{
+   "Environment":{
+	"locations":{...},
+	"agents":{
+		"robot_1", "human_1", "item_1" } },
+
+   "Capabilitites":{
+   	"robot_1":{...},
+    	"human_1":{...},
+	"item_1":{...}	},
+
+   "Constraints":{
+   	"robot_1":{...},
+    	"human_1":{...},
+	"item_1":{...}	},
+
+   "Starting_point":{...},
+
+   "Objective":{...}
+}

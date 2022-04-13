@@ -1,0 +1,7 @@
+string start
+string goal
+---
+
+string[] path
+float64 path_totalcost
+#int32 total_path_points

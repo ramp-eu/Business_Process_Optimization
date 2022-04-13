@@ -1,0 +1,50 @@
+(curl <IP>:1026/v2/entities -s -S --header 'Content-Type: application/json' --header 'Accept: application/json' -d @- | python -mjson.tool) <<EOF
+{
+	"id":"BPO",
+	"type":"BPOSpecificationInput",
+	"specification":{
+		"type":"std_msgs.String",
+		"value":{
+			"Environment":{
+				"locations":{
+					"Name":["Warehouse","Injection_machines","Packing_machines","Starting_point_1","Charging_area","anywhere","on_robot_1"],
+					"Letter":["A","B","C","D","F","*","R"]
+				},
+				"robot_1":["A","B","C","D","F"],
+				"human_1":["A","B","C","D"],
+				"item_1":["A","B","C","D","R"]
+			},
+			"Constraints":{
+				"robot_1":{
+					"A":["*"],
+					"B":["A","C","D"],
+					"C":["A","B","D"],
+					"D":["A","C","B"],
+					"F":["A"]
+				},
+				"human_1":{
+					"A":["B","C","D"],
+					"B":"A",
+					"C":["A","B"],
+					"D":["A","C"]
+				},
+				"item_1":{
+					"A":"R",
+					"B":"R",
+					"C":"R",
+					"D":"R",
+					"R":["A","B","C","D"]
+				}
+			},
+			"Starting_point":{
+				"robot_1":"F",
+				"human_1":"D",
+				"item_1":"A"
+			},
+			"Objective":{
+				"item_1":"C"
+			}
+		}
+	}
+}
+EOF
