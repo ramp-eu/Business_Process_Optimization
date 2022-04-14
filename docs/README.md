@@ -205,22 +205,3 @@ The first letter refers to the robot, the second letter refers to the human and 
 
 `"time"` determines the timed needed for the agents to perform the actions (in seconds) from the Step 1 to 7. 
 Time required for this example is 63 seconds.
-
-<div style="page-break-after: always"></div>
-
-
-
-
-
-
-## How to run the BPO module
-The guide is tested with docker version 18.09.6 and docker-compose version 1.24.0. Supported $ROS_DISTRO is kinetic.
-
-### Starting from docker container
-To start the BPO service, pull the BPO docker image from [docker.ramp.eu](https://docker.ramp.eu/) 
-and run the docker image on your local computer.
-
-```
-docker pull docker.ramp.eu/mod.ro.bpo:latest
-docker run -it docker.ramp.eu/mod.ro.bpo:latest bash
-```

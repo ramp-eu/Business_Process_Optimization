@@ -1,11 +1,11 @@
 services: 
   bpo: 
     restart: always
-    container_name: mod.sw.bpo
+    container_name: mod.ro.bpo
     environment: 
       - "FIWAREHOST=127.0.0.1"
       - "HOST=127.0.0.1"
       - "NETINTERFACE=eth0"
-    image: mod.sw.bpo
+    image: docker.ramp.eu/cut-pvt/mod.ro.bpo:1.0.0
     network_mode: host
 version: "3"
