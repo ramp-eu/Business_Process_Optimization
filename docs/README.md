@@ -1,4 +1,4 @@
-#Business Process Optimization (BPO) module 
+# Business Process Optimization (BPO) module 
 
 The Business Process Optimization (BPO) <sup>1</sup> module determines an optimized solution to the optimized 
 motion task sequencing problem. The major focus of BPO are actions that have to be executed by 
@@ -32,7 +32,7 @@ by Anatoli Tziola, George Georgiades, Savvas G. Loizou from February 2019.
 <div style="page-break-after: always"></div>
 
 
-##Optimization of Logistics processes  
+## Optimization of Logistics processes  
 Manufacturing SMEs can use the Business Process Optimization to optimize the logistics resources required 
 for their factory floor motion tasks (AGVs, humans, factory floor design/routing) and determine an optimized
 solution to the optimized motion task sequencing problem. The major focus of BPO are actions that have to be 
@@ -47,7 +47,7 @@ The main benefits of this case are:
 * Quality control improvement by reducing the transportation errors when the parts/products are transported inside the factory.
 * Dependability owing to automatic assignment of AGV when parts/products are ready for transportation.
 
-###Case study: Optimization of manufacturing logistics 
+### Case study: Optimization of manufacturing logistics 
 
 Use case: _"An item is produced at Production area. The worker operator should load the item on a robot. The robot
 should transport the item at Warehouse for storage."_
@@ -71,15 +71,15 @@ will be:
 
 <div style="page-break-after: always"></div>
 
-##Start guide
+## Start guide
 In the following, a start guide of how to integrate BPO module is described in detail.
 
 
-###BPO Task Specification
+### BPO Task Specification
 To begin with, it is needed to set up the input required of the BPO module, called task specification. 
 The user creates the task specification written in the language secifically developed for the needs of the module.
 
-###How to Set Up a Task Specification
+### How to Set Up a Task Specification
 Here is an example of the task specification. 
 At the moment, we address a single robot-human-item problem. 
 
@@ -175,7 +175,7 @@ More specifically, the item needs to be transported from location `"A"`
 
 
 
-###BPO results explanation
+### BPO results explanation
 The BPO module seeks for the optimal solution for the given task "Transport _item_1_ at location _D_". 
 The BPO result consists of the shortest path and the time needed for the agents to complete the given task. 
 The shortest path determines the fewer agents actions that should be performed by the agents 
