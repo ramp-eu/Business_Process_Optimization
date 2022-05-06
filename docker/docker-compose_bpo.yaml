@@ -1,11 +1,11 @@
 services: 
   bpo: 
     restart: always
-    container_name: mod.ro.bpo
+    container_name: business_process_optimization
     environment: 
       - "FIWAREHOST=127.0.0.1"
       - "HOST=127.0.0.1"
       - "NETINTERFACE=eth0"
-    image: docker.ramp.eu/cut-pvt/mod.ro.bpo:1.0.0
+    image: docker.ramp.eu/betterfactory/business_process_optimization
     network_mode: host
 version: "3"

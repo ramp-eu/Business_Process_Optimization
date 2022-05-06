@@ -31,15 +31,15 @@ To start the BPO service, pull the BPO docker image from [docker.ramp.eu](https:
 and run the docker image on your local computer.
 
 ```
-docker pull docker.ramp.eu/cut-pvt/mod.ro.bpo:1.0.0
-docker run -it docker.ramp.eu/cut-pvt/mod.ro.bpo:1.0.0 bash
+docker pull docker.ramp.eu/betterfactory/business_process_optimization
+docker run -it docker.ramp.eu/betterfactory/business_process_optimization
 ```
 
 Otherwise, you can build the docker image locally using from source code using the following commands:
 ```
 cd <your_catkin_workspace>/src/Business_Process_Optimization/docker
 
-docker build -t mod.ro.bpo .
+docker build -t business_process_optimization .
 ```
 or 
 * Docker-compose \
@@ -49,7 +49,7 @@ The `HOST` IP of the computer where BPO service is currently running (if the BPO
 The `NETINTERFACE` of the computer where the BPO is running. \
 Then, run the BPO docker image using the `docker-compose_bpo.yaml` file.
 ```
-docker pull docker.ramp.eu/cut-pvt/mod.ro.bpo:1.0.0
+docker pull docker.ramp.eu/betterfactory/business_process_optimization
 
 docker-compose -f docker-compose_bpo.yaml up -d
 ```
